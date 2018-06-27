@@ -8,20 +8,59 @@
     <script src="js/AjaxCreate.js"></script>
 </head>
 <body onload="loaded();">
-    <input type="number" id="iId">
+    <input type="number" id="sId">
     <button class="btn btn-primary" onclick="get()">Get</button>
     <table class="table">
             <tr>
                 <th>Id</th>
-                <td> <input type="number" id ="pId"></td>
+                <td> <input type="number" id ="pId" readonly></td>
                 <!-- <td>City</td>
                 <td>State</td>
                 <td>Preferred</td> -->
             </tr>
             <tr>
                 <th>UserName</th>
-                <td> <input type="text" id="pUserName"></td>
+                <td> <input type="text" id="pUserName" readonly></td>
             </tr>
+            <tr>
+                <th>Password</th>
+                <td> <input type="text" id="pPassword" readonly></td>
+            </tr>
+            <tr>
+                <th>FirstName</th>
+                <td> <input type="text" id="pFirstName" readonly></td>
+            </tr>
+            <tr>
+                <th>LastName</th>
+                <td> <input type="text" id="pLastName" readonly></td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td> <input type="text" id="pPhone" readonly></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td> <input type="text" id="pEmail" readonly></td>
+            </tr>
+            <tr>
+                <th>Reviewer?</th>
+                <td> <input type="checkbox" id="pReviewer" readonly></td>
+            </tr>
+            <tr>
+                <th>Admin?</th>
+                <td> <input type="checkbox" id="pAdmin" readonly></td>
+            </tr>
+            <tr>
+                <th>Active?</th>
+                <td> <input type="checkbox" id="pActive" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="change();" class="btn btn-primary">Create</button>
+                    <button onclick="remove();" class="btn btn-danger">Remove</button>
+                </td>
+            </tr>
+
     </table>
 </body>
 </html>
