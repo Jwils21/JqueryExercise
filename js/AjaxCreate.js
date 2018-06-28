@@ -1,5 +1,20 @@
 "option strict"
 
+$().ready(function() {
+    $("body").css("background-color","Chartreuse")
+    $("#pId").css("background-color","Brown")
+    $("#pUserName").css("background-color","DarkMagenta")
+    $("#pPassword").css("background-color","DarkOliveGreen")
+    $("#pFirstName").css("background-color","DeepPink")
+    $("#pLastName").css("background-color","Fuschia")
+    $("#pEmail").css("background-color","LightSalmon")
+    $("#pPhone").css("background-color","MediumVioletRed")
+    $("#pReviewer").css("background-color","violet")
+    $("#pAdmin").css("background-color","tomato")
+    $("#pActive").css("background-color","tan")
+});
+
+
 function get() {
     var id = document.getElementById("sId").value;
     $.getJSON("http://localhost::580778/Users/Get/" + id)
@@ -27,16 +42,16 @@ function load(jsonResponse) {
 function change() {
     var user = {
         Id: 0,
-        UserName: Document.getElementById("pUsername").value,
-        Password: Document.getElementById("pPassword").value,
-        FirstName: Document.getElementById("pFirstName").value,
-        LastName: Document.getElementById("pLastName").value,
-        Phone: Document.getElementById("pPhone").value,
-        Email: Document.getElementById("pEmail").value,
-        Phone: Document.getElementById("pPhone").value,
-        isReviewer: Document.getElementById("pReviewer").value,
-        isAdmin: Document.getElementById("pAdmin").value,
-        isActive: Document.getElementById("pActive").value,
+        UserName: document.getElementById("pUsername").value,
+        Password: document.getElementById("pPassword").value,
+        FirstName: document.getElementById("pFirstName").value,
+        LastName: document.getElementById("pLastName").value,
+        Phone: document.getElementById("pPhone").value,
+        Email: document.getElementById("pEmail").value,
+        Phone: document.getElementById("pPhone").value,
+        isReviewer: document.getElementById("pReviewer").value,
+        isAdmin: document.getElementById("pAdmin").value,
+        isActive: document.getElementById("pActive").value,
     };
 
         $.post("http://localhost:#####/Users/Change", user)
@@ -50,16 +65,16 @@ function change() {
 function remove() {
     var user = {
         Id: 0,
-        UserName: Document.getElementById("pUsername").value,
-        Password: Document.getElementById("pPassword").value,
-        FirstName: Document.getElementById("pFirstName").value,
-        LastName: Document.getElementById("pLastName").value,
-        Phone: Document.getElementById("pPhone").value,
-        Email: Document.getElementById("pEmail").value,
-        Phone: Document.getElementById("pPhone").value,
-        isReviewer: Document.getElementById("pReviewer").value,
-        isAdmin: Document.getElementById("pAdmin").value,
-        isActive: Document.getElementById("pActive").value,
+        UserName: document.getElementById("pUsername").value,
+        Password: document.getElementById("pPassword").value,
+        FirstName: document.getElementById("pFirstName").value,
+        LastName: document.getElementById("pLastName").value,
+        Phone: document.getElementById("pPhone").value,
+        Email: document.getElementById("pEmail").value,
+        Phone: document.getElementById("pPhone").value,
+        isReviewer: document.getElementById("pReviewer").value,
+        isAdmin: document.getElementById("pAdmin").value,
+        isActive: document.getElementById("pActive").value,
     };
 
         $.post("http://localhost:#####/Users/Remove", user)

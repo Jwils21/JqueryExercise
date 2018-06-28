@@ -1,7 +1,7 @@
 "option strict"
 
 $().ready(function() {
-    $("#inpbox")
+    $("#inpbox") 
         .val("This is default text in the input box")
         .css("color","red")
         .css("font-weight", "bold")
@@ -11,6 +11,4 @@ $().ready(function() {
         var txt = $("#inpbox").val();
         $("label").text(txt);
     });
-
 });
-
